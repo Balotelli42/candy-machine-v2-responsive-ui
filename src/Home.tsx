@@ -175,7 +175,7 @@ const Price = styled(Chip)`
   font-family: 'Patrick Hand', cursive !important;
 `;
 
-const Image = styled.img`
+const Video = styled.video`
   height: 400px;
   width: auto;
   border-radius: 7px;
@@ -653,8 +653,8 @@ const Home = (props: HomeProps) => {
                             <h2>My NFT</h2>
                             <br/>
                             <div><Price
-                                label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
-                                src="cool-cats.gif"
+                                label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Video
+                                src="video.mp4"
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
